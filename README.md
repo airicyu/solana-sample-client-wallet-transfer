@@ -43,7 +43,6 @@ Run test log:
 ## Test Transfer one by one
 
 ```
-Loaded payer wallet with balance: 3855904800
 #################### Test Transfer one by one #####################
 trx time=186.4776000007987 ms, send to wallet[0] 12r3doQE9QMWSVf8RBcdtt8E2BVUDUwPtfKFQv9hW6My, trx hash=4EBrE1HnNoMKmWpxKThD8YedW7oARW5iWSiZ3RZVHykxA8AzRiwqvvT2YNK8HQKCT5e9Cv1HFzZnJbRRMGZzghzS
 trx time=56.53090000152588 ms, send to wallet[1] 21PcEjZ5Zd5Vni5X8PjZBWZZi6jbJFmcqfGdXNDoHDDt, trx hash=3KgVh8eBLHbfKpu9zzmcQFcf81LaS7cxkbJqqdJqaAoezwhi1et54ch7uHmXEh5in5CV2HEH1Kg8MZS25NezheCe
