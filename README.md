@@ -10,7 +10,7 @@ We are demonstrating the amazing speed that solana can processing a tranasction 
 
 `npm start`
 
-# Explain the code
+# Summary
 
 The main logic is inside `src/main.ts`.
 
@@ -23,18 +23,29 @@ We could use this to trigger:
 await runEach(payer, receipients)
 ```
 
+- Number of transactions = 100
+- Trx fee = 0.0005 SOL
+- Time taken = 15.5s
+
 ## 2) Send transfer transaction in a batch of 20
 
 We could use this to trigger:
 ```typescript
 await runBatch(payer, receipients, 20)
 ```
+- Number of transactions = 5
+- Trx fee = 0.000025 SOL
+- Time taken = 0.9s
 
 ## 3) Send batch with address lookup table
 We could use this to trigger:
 ```typescript
 await runLookupTableTransfer(payer, receipients) 
 ```
+
+- Number of transactions = 7
+- Trx fee = 0.000025 SOL
+- Time taken = 3.2s
 
 ----
 
