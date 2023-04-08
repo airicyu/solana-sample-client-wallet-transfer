@@ -62,6 +62,7 @@ confirm trx rVeGNmhsPBjpn3MCutqNbS4YJ7uLoSpYFAFPpgiNkzhZfvPQhsRU7EP3n9pDeRv9wMKh
 confirm trx 2Reyfo46Bev7CKMXXUThhv6nhiEM2osHxs24etwqramJFVvuifMf6voiav6KDjb3ceX6NWPpQPmQbzjPjs7EVazF
 Confirmed all trxs. Total elapsed time: 15540.008500002325 ms
 #########################################
+Trx fee = 0.0005 SOL
 ```
 
 ## Test Transfer in batch
@@ -81,6 +82,7 @@ confirm trx HjdfTFJcgx87Z6VSnSDpPZ844rUHK2wyq8yM8JUzQT5hASLnc9phW7fFUogLiAN2ZoRH
 confirm trx DbS7ZM4yEstTKkJPtRCqQC9tVT7UUM2Ye4YUeKnUmAa9JnV33qxrHH9z9HGzPmZKnKfDD6RPQDjbwnTYRRqrkuA
 Confirmed all trxs. Total elapsed time: 919.9912000000477 ms
 #########################################
+Trx fee = 0.000025 SOL
 ```
 
 ## Test Transfer with lookup table
@@ -108,4 +110,5 @@ confirm trx 6455ujwgcUS6xayCZWuDc3YMV4ic6zxeRmc2hCh7TKG93MEJgFh2AeofiSyaMZkncoAF
 confirm trx 5NVoMR17Muuf5guUz6wM8GM4tdoBraziX97hbb79yA4XKLQvxGEHCnBctsBN55c2VbGzK7Vim8Afqhs7Mfw6tgXs
 Confirmed all trxs. Total elapsed time: 3199.927699998021 ms
 #########################################
+Trx fee = 0.02358764 SOL
 ```

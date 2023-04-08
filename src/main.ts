@@ -11,8 +11,8 @@ const connection = new web3.Connection(web3.clusterApiUrl('devnet'), 'confirmed'
  * Loading payer wallet
  */
 let payer = defaultPayer
+let balance = await connection.getBalance(payer.publicKey)
 {
-    let balance = await connection.getBalance(payer.publicKey)
     if (balance < web3.LAMPORTS_PER_SOL * 2) {
         // try airdrop
         await connection.requestAirdrop(payer.publicKey, web3.LAMPORTS_PER_SOL * 2)
@@ -41,3 +41,7 @@ const receipients = loadWalletAddresses().map((_) => new PublicKey(_))
 // await runEach(payer, receipients) // run transfer one by one
 await runBatch(payer, receipients, 20) // run transfer in batch of size 20
 // await runLookupTableTransfer(payer, receipients) // run transfer in batch of 55 with lookup table
+await sleepMs(400)
+const afterBalance = await connection.getBalance(payer.publicKey)
+const transferAmount = 100 * web3.LAMPORTS_PER_SOL * 0.001
+console.log(`Trx fee = ${(balance - transferAmount - afterBalance) / web3.LAMPORTS_PER_SOL} SOL`)
